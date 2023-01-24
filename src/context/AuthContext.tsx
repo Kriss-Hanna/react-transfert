@@ -4,7 +4,7 @@ import firebaseService from "../services/firebase";
 export const AuthContext = createContext(null);
 
 export const AuthProvider = ({ children }) => {
-    const [currentUser, setCurrentUser] = useState<String>(null)
+    const [currentUser, setCurrentUser] = useState<any>(null)
     const [isLoaded, setIsLoaded] = useState<Boolean>(false)
 
     useEffect(() => {
